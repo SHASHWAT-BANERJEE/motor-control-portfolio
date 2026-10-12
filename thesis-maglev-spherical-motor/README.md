@@ -38,8 +38,8 @@ Parameters extracted from ANSYS were used in the Simulink model. Dual-loop contr
 ![Close-up of the wound maglev poles and rotor](images/17_wound_poles_and_rotor.png)
 ![Circuit diagram of the maglev operation](images/18_maglev_circuit_diagram.png)
 ![Final hardware setup of the vertical maglev stabilization](images/19_vertical_maglev_final_setup.png)
-![Simulink C2000 Blockset model used for model-based code generation](images/20_simulink_c2000_blockset_model_A.png)
-![Simulink C2000 Blockset model used for model-based code generation](images/20_simulink_c2000_blockset_model_B.png)
+![ADC-interrupt synchronization: the C28x Interrupt block (IRQ1) triggers the ADC-PWM function-call subsystem, so the control loop runs synchronized with ADC conversion](images/20_simulink_c2000_blockset_model_A.png)
+![Inside the ADC-PWM subsystem: position sensors via ADC feed the position controller, whose output is the reference for the PI current controller; the controller output sets the ePWM duty cycles](images/20_simulink_c2000_blockset_model_B.png)
 ![Current response to a step change on hardware](images/21_current_step_response_hardware.png)
 
 ## What ran where
