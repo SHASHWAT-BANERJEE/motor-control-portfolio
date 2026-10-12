@@ -2,7 +2,6 @@
 
 Shashwat Banerjee | M.Tech, Power Electronics, Machines & Drives, IIT Delhi (2026)
 
-Maglev demo video: https://lnkd.in/p/dVbiqRVr
 
 ## Projects
 
