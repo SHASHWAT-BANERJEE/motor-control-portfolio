@@ -5,21 +5,21 @@ Guide: Prof. Krishan Kant Bhalla, IIT Delhi | Demo video: https://lnkd.in/p/dVbi
 ## 1. Design overview
 Spherical rotor with 6 maglev poles (bearingless along all three global axes) and 4 sets of three-phase hysteresis motor windings, each rotating the rotor about its local axis.
 
-![ANSYS assembly](images/00_ansys_final_maglev_hysteresis_assembly.png.png)
+![ANSYS assembly](images/00_ansys_final_maglev_hysteresis_assembly.png)
 
 *Final maglev and hysteresis motor assembly in ANSYS: 6 maglev poles, 4 hysteresis stator sets and the maglev body, showing the space optimization.*
 
 ## 2. B-H characterization of the rotor material (S52100 bearing steel)
-![B-H tracer lab rig](images/01_bh_tracer_lab_rig.jpeg)
+![B-H tracer lab rig](images/01_bh_tracer_lab_rig.png)
 
 *Laboratory rig used to measure the B-H loop.*
 
-![B-H loop on the DSO](images/02_bh_loop_dso_s52100.jpg)
+![B-H loop on the DSO](images/02_bh_loop_dso_s52100.png)
 
 *B-H loop of S52100 traced on the DSO. This data was used for the rotor material properties in ANSYS Maxwell 3D.*
 
 ## 3. FEA: maglev (ANSYS Maxwell 3D)
-![Maglev cross section](images/03_maglev_pole_rotor_cross_section.jpg)
+![Maglev cross section](images/03_maglev_pole_rotor_cross_section.png)
 
 *Maglev structure: cross section of the maglev poles and rotor along one axis.*
 
@@ -36,7 +36,7 @@ Spherical rotor with 6 maglev poles (bearingless along all three global axes) an
 *Force versus rotor displacement.*
 
 ## 4. FEA: hysteresis motor
-![Hysteresis stator and rotor](images/07_hysteresis_stator_rotor_one_axis.png.jpg)
+![Hysteresis stator and rotor](images/07_hysteresis_stator_rotor_one_axis.png)
 
 *Hysteresis motor stator and rotor along one axis.*
 
@@ -73,11 +73,11 @@ Parameters extracted from ANSYS were used in the Simulink model. Dual-loop contr
 *Speed response of the hysteresis motor with Bang-Bang control (MIL).*
 
 ## 7. Hardware and rapid control prototyping (vertical maglev)
-![Pole machining](images/16_pole_machining_lathe.jpeg)
+![Pole machining](images/16_pole_machining_lathe.png)
 
 *Machining of the maglev poles on a lathe (turning and drilling).*
 
-![Wound poles and rotor](images/17_wound_poles_and_rotor.jpg)
+![Wound poles and rotor](images/17_wound_poles_and_rotor.png)
 
 *Close-up of the wound maglev poles and rotor.*
 
@@ -97,7 +97,7 @@ Parameters extracted from ANSYS were used in the Simulink model. Dual-loop contr
 
 *Inside the ADC-PWM subsystem: position sensors via ADC feed the position controller, whose output is the reference for the PI current controller; the controller output sets the ePWM duty cycles.*
 
-![Hardware current step response](images/21_current_step_response_hardware.jpg)
+![Hardware current step response](images/21_current_step_response_hardware.png)
 
 *Current response to a step change on hardware (DSO).*
 
