@@ -28,7 +28,6 @@ Parameters extracted from ANSYS were used in the Simulink model. Dual-loop contr
 ![Dual-loop maglev controller in Simulink](images/10_maglev_dual_loop_simulink.png)
 ![Position response (MIL)](images/11_maglev_position_response_mil.png)
 ![Current response (MIL)](images/12_maglev_current_response_mil.png)
-![Parametric Bode plot of the current loop](images/14_current_loop_bode.png)
 
 ## 6. MIL simulation: hysteresis motor
 ![Dual-loop Bang-Bang controller for the hysteresis motor in Simulink](images/13_hysteresis_bang_bang_simulink.png)
