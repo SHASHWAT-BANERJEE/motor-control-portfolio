@@ -66,6 +66,6 @@ Values below marked "about" are read from the scope plots.
 
 *Speed and torque response with SVPWM, same test sequence.*
 
-Observation: the speed reaches 3000 rpm after about 1.4 s of ramping, but with a sustained oscillation of about ±50 rpm, and the electrical torque oscillates at roughly 3 to 4 Hz. [Write the current status here, for example "controller gains are being retuned", or delete this section.]
+Observation: the speed reaches 3000 rpm after about 1.4 s of ramping, but with a sustained oscillation of about ±50 rpm, and the electrical torque oscillates at roughly 3 to 4 Hz.
 
 Contact: [LinkedIn](https://www.linkedin.com/in/shashwat-banerjee-7a7b43197) | shashwatbanerjee96iitd@gmail.com
