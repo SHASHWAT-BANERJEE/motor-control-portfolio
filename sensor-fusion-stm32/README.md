@@ -11,9 +11,17 @@ The project's goal was a motion-based tamper-alert system for microcontroller-ba
 - **IMU board:** X-NUCLEO-IKS4A1, using the LSM6DSO16IS 3-axis accelerometer and 3-axis gyroscope
 - **Tools:** STM32CubeMX (peripheral and clock setup), STM32CubeIDE (code, debugging), MATLAB (plotting)
 
+![X-NUCLEO-IKS4A1 expansion board](images/x_nucleo_iks4a1_expansion_board.png)
+
+*X-NUCLEO-IKS4A1 sensor expansion board.*
+
+![STM32U575ZI-Q Nucleo board](images/stm32u575zi_q_nucleo_board.png)
+
+*STM32U575ZI-Q Nucleo development board.*
+
 ![Microcontroller and sensor assembly](images/mcu_sensor_assembly.png)
 
-*STM32U575ZI-Q Nucleo board with the X-NUCLEO-IKS4A1 sensor board.*
+*The two boards assembled together.*
 
 ## Firmware
 - Sensor initialization, data reading and UART output, starting from the ST sample project
@@ -28,6 +36,16 @@ The project's goal was a motion-based tamper-alert system for microcontroller-ba
 At rest the gyroscope returned large values. Cause: its 16-bit signed output was being stored in a 32-bit signed integer by the sample code. Fix: store the raw values as 16-bit signed integers and convert to degrees per second with the sensitivity for the selected range (8.75 mdps/LSB at ±250 dps). After this the readings at rest were close to zero.
 
 ## Kalman filter
+A Kalman filter combines the gyroscope (precise in the short term but drifting) with the accelerometer (noisy but stable in the long term).
+
+![Linear Kalman filter overview](images/kalman_filter_overview.png)
+
+*Basic overview of the linear Kalman filter.*
+
+![Linear Kalman filter algorithm](images/kalman_filter_algorithm.png)
+
+*Linear Kalman filter algorithm: prediction step and update step.*
+
 - State: roll and pitch (2 states)
 - Prediction: gyroscope rates multiplied by the sample time, applied as the input
 - Correction: roll and pitch from the accelerometer, used as the measurement
